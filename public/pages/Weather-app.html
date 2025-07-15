@@ -7,34 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script>
-         function SearchClick(){
-            
-            var lblCityname=document.getElementById("lblCity");
-            var description=document.getElementById("lblDes");
-            var temprature=document.getElementById("lblTemp");
-            var visibility=document.getElementById("visibility");
-            var pressure=document.getElementById("pressure");
-            var wind=document.getElementById("wind");
-            var humidity=document.getElementById("humidity");
-
-            var city=document.getElementById("cityName").value;
-
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8b06ff638162b2ac82cdb7cc2fdc0bca&units=metric`)
-            .then(function(response){
-                return response.json()
-            })
-            .then(function(data){
-               lblCityname.innerHTML=`<h6 class="text-dark fw-bold d-inline">LOCATION : </h6> ${data.name.toUpperCase()}`
-               description.innerHTML=`<h6 class="text-dark fw-bold d-inline">DESCRIPTION : </h6>${data.weather[0].description.toUpperCase()}`;
-               temprature.innerHTML=`${data.main.temp}<sup>&deg</sup> C`;
-               visibility.innerHTML=`<h6 class="text-dark d-inline fw-bold"> Visibility </h6> <br>${data.visibility}`;
-               pressure.innerHTML=`<h6 class="text-dark d-inline fw-bold"> Pressure </h6> <br>${data.main.pressure}`;
-               wind.innerHTML=`<h5 class="text-black d-inline fw-bold"> WIND SPEED </h5> <br>${data.wind.speed.toLocaleString("en-in",{style:"unit",unit:"kilometer-per-hour"})}`;
-               humidity.innerHTML=`<h5 class="text-black d-inline fw-bold"> HUMIDITY</h5> <br>${data.main.humidity}`;
-            })
-         }
-    </script>
+    <script src="../../src/scripts/weather-api.js"></script>
 </head>
 <body>
     <header class="p-4 m-4 border rounded rounded-4" style="background-image: url(../../public/images/rain.jpg); background-size: cover;">

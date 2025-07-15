@@ -3,37 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HDFC - EMI Caluculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
-    <script>
-        function RangeAmount(){
-            document.getElementById("Amount").value=document.getElementById("RangeAmount").value;
-        }
-        function InputAmount(){
-            document.getElementById("RangeAmount").value=document.getElementById("Amount").value;
-        }
-        function RangeYear(){
-            document.getElementById("Year").value=document.getElementById("RangeYear").value;
-        }
-        function InputYear(){
-            document.getElementById("RangeYear").value=document.getElementById("Year").value;
-        }
-        function RangeRate(){
-            document.getElementById("Rate").value=document.getElementById("RangeRate").value;
-        }
-        function InputRate(){
-            document.getElementById("RangeRate").value=document.getElementById("Rate").value;
-        }
-        function Caluculate(){
-            var A=parseInt(document.getElementById("Amount").value);
-            var M=parseInt(document.getElementById("Year").value)*12;
-            var I=parseFloat(document.getElementById("Rate").value)/12/100;
-            var EMI=A*I*(Math.pow(1+I,M))/(Math.pow(1+I,M)-1);
-            document.getElementById("result").innerHTML=`Your monthly EMI will be :<span class="fw-bold fs-4 text-primary">${Math.round(EMI).toLocaleString("en-in", {style:"currency",currency:"INR",minimumFractionDigits:0})}</span>per month`
-        }
-    </script>
+    <script src="../../src/scripts/emi-cal.js"></script>
 </head>
 <body class="bg-secondary p-4 m-4">
     <div class="bg-white p-4 m-4">

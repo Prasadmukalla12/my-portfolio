@@ -3,67 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            width: 600px;
-            display: grid;
-            grid-template-columns: 3fr 3fr 3fr 3fr;
-            height: 60px;
-            margin-top: 200px;
-        }
-        .container div {
-            border:1px solid gray;
-            padding: 20px;
-            font-family: Arial;
-            font-size: 30px;
-            color:gray;
-        }
-    </style>
-    <script>
-       var h=0
-       var m=0
-       var s=0
-       var ms=0
-       function timer(){
-        ms++
-        if(ms===99){
-            s++
-            ms=0
-        }
-        if(s===59){
-            m++
-            s=0
-        }
-        if(m===59){
-            h++
-            m=0
-        }
-        document.getElementById("hours").innerHTML=h+"hrs"
-        document.getElementById("min").innerHTML=m+"m"
-        document.getElementById("sec").innerHTML=s+"s"
-        document.getElementById("millisec").innerHTML=ms+"ms"
-       }
-       var t1
-       function start(){
-        t1=setInterval(timer,10)
-       }
-       function stop(){
-        clearInterval(t1)
-        h=0
-        m=0
-        s=0
-        ms=0
-       document.getElementById("hours").innerHTML=h+"hrs"
-        document.getElementById("min").innerHTML=m+"m"
-        document.getElementById("sec").innerHTML=s+"s"
-        document.getElementById("millisec").innerHTML=ms+"ms"
-       }
-    </script>
+    <title>Stop-Watch</title>
+    <link rel="stylesheet" href="../../src/styles/stop-watch.css">
+    <script src="../../src/scripts/stop-watch.js"></script>
 </head>
 <body>
     <div>
