@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../../src/scripts/calculator.js"></script>
+    <link rel="stylesheet" href="../../src/styles/calculator.css">
+</head>
+<body>
+   <div class="container">
+    <div>
+        <input type="text" id="txtValue" readonly>
+    </div>
+    <div class="btn-container">
+        <button onclick="clearClick()">AC</button>
+        <button onclick="deleteClick()">DL</button>
+        <button onclick="addItem('.')">.</button>
+        <button class="orange" onclick="addItem('/')">/</button>
+    </div>
+    <div class="btn-container">
+        <button onclick="addItem('7')">7</button>
+        <button onclick="addItem('8')">8</button>
+        <button onclick="addItem('9')">9</button>
+        <button class="orange" onclick="addItem('*')">*</button>
+    </div>
+    <div class="btn-container">
+        <button onclick="addItem('4')">4</button>
+        <button onclick="addItem('5')">5</button>
+        <button onclick="addItem('6')">6</button>
+        <button class="orange" onclick="addItem('-')">-</button>
+    </div>
+    <div class="btn-container">
+        <button onclick="addItem('1')">1</button>
+        <button onclick="addItem('2')">2</button>
+        <button onclick="addItem('3')">3</button>
+        <button class="orange" onclick="addItem('+')">+</button>
+    </div>
+    <div class="btn-container">
+        <button onclick="addItem('00')">00</button>
+        <button onclick="addItem('0')">0</button>
+        <button class="equal" onclick="calculateClick()">=</button>
+    </div>
+   </div>
+</body>
+</html>

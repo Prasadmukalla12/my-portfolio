@@ -1,0 +1,36 @@
+.main-container{
+            height: 400px;
+        }
+        .container{
+            padding: 15px;
+        }
+         .container span {
+            display: inline-block;
+            background-color: rgba(0,0,0,0.4);
+            padding: 20px;
+            text-align: center;
+            margin-right: 40px;
+            border-radius: 20px;
+            width: 150px;
+        }
+        .container span:hover{
+            border: 1px solid white;
+        }
+        .card-row-1{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: black;
+        }
+        .card-row-2{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: black;
+        }
+        .card-row-3{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: black;
+        }
