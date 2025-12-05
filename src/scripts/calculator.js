@@ -10,3 +10,4 @@
         function deleteClick() {
             document.getElementById("txtValue").value = document.getElementById("txtValue").value.slice(0, -1);
         }
+        
