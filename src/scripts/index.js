@@ -1,18 +1,4 @@
-function Project1Click(){
-    window.open("https://github.com/Prasadmukalla12/video-tutorial-typeScript")
-}
-function Project2Click(){
-    window.open("https://github.com/Prasadmukalla12/To-Do-Application-ts")
-}
-function Project3Click(){
-    window.open("https://github.com/Prasadmukalla12/Fakestore-api")
-}
-function Project4Click(){
-    window.open("https://github.com/Prasadmukalla12/weather-app")
-}
-function Project5Click(){
-    window.open("https://github.com/Prasadmukalla12/Calculator")
-}
+
 
 function CategoryClick(value){
     var car1 = document.getElementById("fullstack1")
