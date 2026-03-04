@@ -11,33 +11,33 @@
 <body class="bg-secondary p-4 m-4">
     <div class="bg-white p-4 m-4">
         <div class="p-2 text-center"><h2 >Personal Loan EMI Caluculator</h2></div>
-        <div class="row my-4">
-            <div class="col">
+        <div class="row g-3 my-4">
+            <div class="col-12 col-md-4 col-sm-4">
                 Amount You Need &#8377; <input type="text" size="8" id="Amount" onchange="InputAmount()">
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 col-sm-4">
                 For <input type="text" size="3" id="Year" onchange="InputYear()"> Years
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 col-sm-4">
                 Interest Rate <input type="text" size="4" id="Rate" onchange="InputRate()"> %
             </div>
         </div>
         <div class="row my-4">
-            <div class="col">
+            <div class="col-12 col-md-4 col-sm-4">
                 <input type="range" class="form-range" min="50000" max="4000000" step="20000" value="50000" id="RangeAmount" onchange="RangeAmount()">
                 <div>
                     <span>&#8377; 50,000 </span>
                     <span class="float-end">&#8377; 40,00,000</span>  
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 col-sm-4">
                 <input type="range" class="form-range" min="1" max="5" value="1" id="RangeYear" onchange="RangeYear()">
                 <div>
                     <span> 1 Year </span>
                     <span class="float-end">5 Years</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 col-sm-4">
                 <input type="range" class="form-range" min="10.9" max="21" value="10.9" id="RangeRate" onchange="RangeRate()">
                 <div>
                     <span>10.9%</span>
