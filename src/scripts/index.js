@@ -6,6 +6,7 @@ function CategoryClick(value){
     var car3 = document.getElementById("frontend1")
     var car4 = document.getElementById("frontend2")
     var car5 = document.getElementById("frontend3")
+    var car6 = document.getElementById("frontend4")
     var btn1 = document.getElementById("all")
     var btn2 = document.getElementById("fulstk")
     var btn3 = document.getElementById("frnEnd")
@@ -20,6 +21,7 @@ function CategoryClick(value){
             car3.style.display = "block"
             car4.style.display = "block"
             car5.style.display = "block"
+            car6.style.display = "block"
             break;
         case "fulstk" : 
             btn2.style.color = "white"
@@ -31,6 +33,7 @@ function CategoryClick(value){
             car3.style.display = "none"
             car4.style.display = "none"
             car5.style.display = "none"
+            car6.style.display = "none"
             break;
         case "all":
             btn1.style.color = "white"
