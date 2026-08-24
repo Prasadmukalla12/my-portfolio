@@ -1,430 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <meta name="description" content="Portfolio of Durga Prasad, a frontend developer building responsive, user-focused web experiences.">
+    <title>Durga Prasad | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/styles/index.css">
-    <script src="./src/scripts/index.js"></script>
-</head>
-<body>
-  <header class="nav">
-    <div class="nav-inner">
-      <div class="nav-logo">
-        <div class="nav-dot"></div>
-        <span>DurgaPrasad.dev</span>
+    <script src="./src/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Durga Prasad home">
+          <span class="brand-mark">DP</span>
+          <span>durga.prasad</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="mailto:prasadmukalla124@gmail.com">
+          Let's talk <i class="bi bi-arrow-up-right"></i>
+        </a>
       </div>
-      <nav class="nav-links">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="page-wrapper">
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <h1>
-          Hi, I'm <span class="hero-highlight">Prasad</span> <br />
-           Frontend Developer & React Developer
-        </h1>
-        <p class="hero-sub">
-          I build fast, clean, and responsive web apps using HTML, CSS, JavaScript and React.
-          I love turning ideas into working products with simple, user-friendly designs.
-        </p>
-
-        <div class="hero-badges">
-          <div class="badge"> <span>Actively looking</span> for a fresher role</div>
-          <div class="badge"> Frontend · REST APIs</div>
-          <div class="badge"> React · Bootstrap · UI</div>
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Available for opportunities</p>
+          <h1>Building thoughtful <em>digital experiences</em> for the web.</h1>
+          <p class="hero-intro">
+            I'm Durga Prasad, a frontend developer based in Hyderabad. I turn ideas into fast,
+            responsive, and easy-to-use web products.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              View selected work <i class="bi bi-arrow-down-right"></i>
+            </a>
+            <a class="button button-secondary" href="https://github.com/Prasadmukalla12" target="_blank" rel="noopener">
+              GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+          <dl class="hero-stats" aria-label="Portfolio highlights">
+            <div><dt>6+</dt><dd>Projects built</dd></div>
+            <div><dt>React</dt><dd>Primary framework</dd></div>
+            <div><dt>Open</dt><dd>To frontend roles</dd></div>
+          </dl>
         </div>
+        <div class="hero-visual" aria-label="Portrait of Durga Prasad">
+          <div class="visual-grid"></div>
+          <div class="portrait-frame">
+            <img src="./public/images/profile.jpeg" alt="Durga Prasad">
+            <div class="portrait-label"><span class="availability-dot"></span> Open to work</div>
+          </div>
+          <div class="floating-note note-top">
+            <i class="bi bi-code-slash"></i>
+            <span>Frontend<br>Developer</span>
+          </div>
+          <div class="floating-note note-bottom">
+            <span class="note-number">01</span>
+            <span>Design meets<br>function</span>
+          </div>
+        </div>
+      </section>
 
-        <div class="hero-actions">
-          <button class="btn btn-primary">
-           <a href="#projects"> View My Projects → </a>
-          </button>
-          <a
-            class="btn btn-ghost"
-            href="http://github.com/Prasadmukalla12/ "
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub Profile
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / About</p>
+          <h2>A practical builder with an eye for the details.</h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>
+              I'm a self-motivated developer who enjoys making interfaces feel simple, useful, and reliable.
+              Through hands-on projects, I've worked across responsive UI, REST API integration,
+              authentication, and CRUD workflows.
+            </p>
+            <p>
+              I'm looking for a team where I can contribute with curiosity, strong fundamentals,
+              and a genuine care for the end user.
+            </p>
+            <div class="trait-list">
+              <span>Quick learner</span>
+              <span>Clear communicator</span>
+              <span>Open to relocate</span>
+            </div>
+          </div>
+          <div class="skills-panel">
+            <p class="panel-label">Toolkit</p>
+            <div class="skills-list">
+              <div><span>Frontend</span><p>HTML, CSS, JavaScript, React</p></div>
+              <div><span>Styling</span><p>Bootstrap, Tailwind CSS, Responsive UI</p></div>
+              <div><span>Backend</span><p>Node.js, Express.js, REST APIs</p></div>
+              <div><span>Data & tools</span><p>MongoDB, Git, GitHub, Postman</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="projects-heading">
+          <div class="section-heading">
+            <p class="eyebrow">02 / Selected work</p>
+            <h2>Projects made to solve everyday problems.</h2>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filter projects">
+            <button class="filter-btn is-active" data-filter="all">All work</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Full stack</button>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-featured" data-category="frontend">
+            <div class="project-index">01</div>
+            <div class="project-content">
+              <p class="project-type">Frontend / React</p>
+              <h3>Food Delivery App</h3>
+              <p>Browse menu categories, discover products, and manage a simple shopping cart through a clean, mobile-friendly interface.</p>
+              <ul class="tech-list"><li>React</li><li>CSS</li><li>UI libraries</li></ul>
+              <div class="project-links">
+                <a href="https://foodapp-7f8e9.web.app" target="_blank" rel="noopener">Live site <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/Prasadmukalla12/food_app" target="_blank" rel="noopener">Source <i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-category="fullstack">
+            <div class="project-index">02</div>
+            <div class="project-content">
+              <p class="project-type">Full stack / MERN</p>
+              <h3>Video Library System</h3>
+              <p>A video management platform with user accounts, saved videos, search, sorting, filtering, and admin CRUD operations.</p>
+              <ul class="tech-list"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+              <div class="project-links">
+                <a href="https://video-tutorial-27cae.web.app/" target="_blank" rel="noopener">Live site <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/Prasadmukalla12/Video-tutorial" target="_blank" rel="noopener">Source <i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-category="fullstack">
+            <div class="project-index">03</div>
+            <div class="project-content">
+              <p class="project-type">Full stack / MERN</p>
+              <h3>Appointment Manager</h3>
+              <p>Plan and manage appointments with a responsive interface and end-to-end CRUD workflows backed by REST APIs.</p>
+              <ul class="tech-list"><li>React</li><li>Express</li><li>TypeScript</li></ul>
+              <div class="project-links">
+                <a href="https://react-to-do-application-2a524.web.app/" target="_blank" rel="noopener">Live site <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/Prasadmukalla12/To-Do-Application-ts" target="_blank" rel="noopener">Source <i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-category="frontend">
+            <div class="project-index">04</div>
+            <div class="project-content">
+              <p class="project-type">Frontend / API</p>
+              <h3>Weather Lookup</h3>
+              <p>Search cities and see current weather data, with thoughtful error states and a straightforward user experience.</p>
+              <ul class="tech-list"><li>JavaScript</li><li>Fetch API</li><li>Bootstrap</li></ul>
+              <div class="project-links">
+                <a href="https://prasadmukalla12.github.io/weather-app/" target="_blank" rel="noopener">Live site <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/Prasadmukalla12/weather-app" target="_blank" rel="noopener">Source <i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section container">
+        <div>
+          <p class="eyebrow">03 / Contact</p>
+          <h2>Have a role or project in mind?</h2>
+          <p>I'd love to hear about it. The fastest way to reach me is by email.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="email-link" href="mailto:prasadmukalla124@gmail.com">
+            prasadmukalla124@gmail.com <i class="bi bi-arrow-up-right"></i>
           </a>
-        </div>
-      </div>
-
-      <div class="hero-photo-wrap">
-        <div class="hero-card">
-          <div class="hero-card-inner">
-            <img
-              src="./public/images/profile.jpeg"
-              alt="Prasad profile"
-              class="profile-photo"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-
-            <div class="hero-tag">
-              <span >Open to React / Frontend Developer roles</span>
-            </div>
+          <div>
+            <a href="https://www.linkedin.com/in/durgaprasadmukalla/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Prasadmukalla12" target="_blank" rel="noopener">GitHub</a>
+            <span>Hyderabad, India</span>
           </div>
         </div>
-      </div>
-    </section><br><br><hr>
+      </section>
+    </main>
 
-    <section id="about">
-      <p class="section-label">About</p>
-      <h2 class="section-title">Who I am & what I do</h2>
-      <p class="section-desc">
-        I'm a self-motivated fresher with hands-on experience in building small to medium web
-        applications using the React/Frontend. I focus on clean code, reusable components, and simple
-        user flows that solve real problems.
-      </p>
-
-      <div class="about-grid">
-        <div class="about-card">
-          <p>
-            I enjoy learning by building. I have created projects like a Video Library,
-            Food Delivery Application , and Appointment Management system apps using React, Express, Node.js and
-            MongoDB.
-            <br /><br />
-            I’m comfortable with Git, APIs, and frontend design using Bootstrap and Tailwind CSS. Right now, I’m
-            looking for an opportunity where I can learn from a strong team and grow as a Frontend / React
-            developer.
-          </p>
-
-          <div class="tag-row">
-            <span class="pill text-primary fw-bold"> Quick learner</span>
-            <span class="pill text-primary fw-bold"> Can understand requirements</span>
-            <span class="pill text-primary fw-bold"> Ready to relocate</span>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <p style="margin-bottom: 8px; font-weight: 500; font-size: 13px">
-            Tech stack & tools
-          </p>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <span class="skill-title">Frontend</span>
-              <span class="skill-sub">HTML · CSS · JS · React · Bootstrap · Tailwind CSS</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Backend</span>
-              <span class="skill-sub">Node.js · Express.js</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Database</span>
-              <span class="skill-sub">MongoDB · Mongoose</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">APIs</span>
-              <span class="skill-sub">REST · JSON · Postman</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Version Control</span>
-              <span class="skill-sub">Git · GitHub</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Other</span>
-              <span class="skill-sub">VS Code · Vite</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><br><br><hr>
-
-    <!-- Projects -->
-    <section id="projects">
-      <p class="section-label">Projects</p>
-      <h2 class="section-title">Things I’ve built</h2>
-      <p class="section-desc">
-        These are some of my favourite projects. They helped me practice authentication, CRUD
-        operations, API integration, and UI design. Click on the links to view code.
-      </p>
-
-      <div class="filter-row">
-        <button class="filter-btn active" onclick="CategoryClick(this)" id="all" >All</button>
-        <button class="filter-btn"  onclick="CategoryClick(this)" id="frnEnd" >Frontend</button>
-        <button class="filter-btn"  onclick="CategoryClick(this)" id="fulstk" >Full Stack</button>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-
-        <article  class="project-card"  id="frontend1">
-          <div class="project-badge">Frontend</div>
-          <h3 class="project-title">Food Delivery Application</h3>
-          <p class="project-text">
-            Created Food Delivery Application application with products loaded.It allows users to view,add simple cart methods. Users can access the products category wise.
-          </p>
-          <p class="project-tech">HTML · CSS · React · UI libraries</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/food_app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-
-            <a
-              class="project-link"
-              href="https://foodapp-7f8e9.web.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go Live
-            </a>
-            
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-
-        <article class="project-card"  id="fullstack1">
-          <div class="project-badge">Full Stack · MERN</div>
-          <h3 class="project-title">Video Library System</h3>
-          <p class="project-text">
-            Admin can add, update, delete, search, sort and filter videos. Users can register, log
-            in, view, and save videos. Built using complete MERN stack.
-          </p>
-          <p class="project-tech">React · Node.js · Express · MongoDB · TypeScript</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/Video-tutorial"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              class="project-link"
-              href="https://video-tutorial-27cae.web.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go Live
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-         
-        <article class="project-card"  id="fullstack2">
-          <div class="project-badge">Full Stack</div>
-          <h3 class="project-title">Appointments Management(To-Do)</h3>
-          <p class="project-text">
-             Built an Appointment Management System - implemented REST APIs and full CRUD functionality for creating,editing and deleting appointments with a responsive Bootstrap UI.
-          </p>
-          <p class="project-tech">React · Express.js · Node.js · MongoDB · TypeScript</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/To-Do-Application-ts"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-
-            <a
-              class="project-link"
-              href="https://react-to-do-application-2a524.web.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go Live
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article  class="project-card"  id="frontend2">
-          <div class="project-badge">Frontend</div>
-          <h3 class="project-title">Weather Lookup App</h3>
-          <p class="project-text">
-            Users can search any city and see live weather data using a public API. Built to
-            practice API calls and error handling in JavaScript.
-          </p>
-          <p class="project-tech">JavaScript · Fetch API · Bootstrap</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/weather-app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-
-            <a
-              class="project-link"
-              href="https://prasadmukalla12.github.io/weather-app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go Live
-            </a>
-            
-          </div>
-        </article>
-
-        <!-- Project 5 -->
-        <article  class="project-card" id="frontend3">
-          <div class="project-badge">Frontend</div>
-          <h3 class="project-title">Simple Calculator</h3>
-          <p class="project-text">
-              I built a basic Calculator using HTML,CSS,JavaScript.It performs simple arithmetic operations such as addition,subtraction,multiplication and division.The design is clean and responsive.
-          </p>
-          <p class="project-tech">HTML · CSS · JavaScript</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/Calculator"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              class="project-link"
-              href="https://prasadmukalla12.github.io/Calculator/"
-              target="_blank"
-            >
-              Go Live
-            </a>
-          </div>
-        </article>
-
-        <!-- Project-6 -->
-
-        <article class="project-card"  id="frontend4">
-          <div class="project-badge">Frontend</div>
-          <h3 class="project-title">Loan EMI Calculator</h3>
-          <p class="project-text">
-             I developed a Personal Loan EMI Calculator for HDFC that allows users to enter the loan amount, interest rate, and tenure to instantly calculate their monthly EMI. 
-          </p>
-          <p class="project-tech">HTML · CSS · Bootstrap · JavaScript</p>
-          <div class="project-links">
-            <a
-              class="project-link"
-              href="https://github.com/Prasadmukalla12/Personal-loan-calculator"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-
-            <a
-              class="project-link"
-              href="https://prasadmukalla12.github.io/Personal-loan-calculator/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go Live
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </section><br><br><hr>
-
-    <section id="contact">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">Let’s work together</h2>
-      <p class="section-desc">
-        If you think I’m a good fit for your team, feel free to contact me by email, phone, or the
-        form below. I’m available for full-time roles, internships, or freelance work.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>
-            I’m based in Hyderabad, India, but I’m open to remote or relocation opportunities. I
-            reply quickly to emails and LinkedIn messages.
-          </p>
-
-          <div class="contact-row">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">prasadmukalla124@gmail.com</span>
-          </div>
-
-          <div class="contact-row">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">+91-7288039973</span>
-          </div>
-
-          <div class="contact-row">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Hyderabad, Telangana, India</span>
-          </div>
-
-          <div class="social-row">
-            <a
-              class="social-btn"
-              href="http://github.com/Prasadmukalla12/ "
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              class="social-btn"
-              href="https://www.linkedin.com/in/durgaprasadmukalla/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              class="social-btn"
-              href="./public/docs/Prasad-Resume-Download.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download Resume
-            </a>
-          </div>
-        </div>
-
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a demo form. Connect with me via email or Phone');">
-          <div class="contact-form-row">
-            <div class="field">
-              <label for="name">Name</label>
-              <input class="input" id="name" type="text" placeholder="Your name" />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input class="input" id="email" type="email" placeholder="you@example.com" />
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea
-              class="textarea"
-              id="message"
-              placeholder="Tell me a bit about the role or project..."
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="year"></span> Prasad • Built with HTML, CSS & a bit of JavaScript
+    <footer class="container">
+      <span>&copy; <span id="year"></span> Durga Prasad</span>
+      <span>Designed &amp; built with intention.</span>
     </footer>
-  </main>
-</body>
+  </body>
 </html>

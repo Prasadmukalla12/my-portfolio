@@ -41,7 +41,12 @@
                     </dl>
                     </div>
                 <div class="card-footer">
-                    <button value=${product.id} onclick="additems(this.value)" class="bi bi-cart4 btn btn-warning w-100">Add to cart</button>
+                    <button value=${product.id} 
+                    onclick="additems(this.value)" 
+                    class="bi bi-cart4 btn btn-warning w-100"
+                    >
+                    Add to cart
+                    </button>
                     </div>
                 `
                 document.querySelector("main").appendChild(div)

@@ -21,5 +21,8 @@
             var M=parseInt(document.getElementById("Year").value)*12;
             var I=parseFloat(document.getElementById("Rate").value)/12/100;
             var EMI=A*I*(Math.pow(1+I,M))/(Math.pow(1+I,M)-1);
-            document.getElementById("result").innerHTML=`Your monthly EMI will be :<span class="fw-bold fs-4 text-primary">${Math.round(EMI).toLocaleString("en-in", {style:"currency",currency:"INR",minimumFractionDigits:0})}</span>per month`
+            document.getElementById("result").innerHTML=`Your monthly EMI will be :
+            <span class="fw-bold fs-4 text-primary">
+            ${Math.round(EMI).toLocaleString("en-in", {style:"currency",currency:"INR",minimumFractionDigits:0})}
+            </span>per month`
         }
